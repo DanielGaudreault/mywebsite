@@ -30,23 +30,26 @@
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 20px 0;
+        .side-tab {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background-color: #1976d2;
+            padding: 20px;
+            z-index: 999;
         }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
+        .side-tab a {
+            display: block;
             color: #fff;
             text-decoration: none;
-            font-size: 18px;
-            transition: color 0.3s ease;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
-        nav ul li a:hover {
-            color: #ffd54f; /* Yellow */
+        .side-tab a:hover {
+            background-color: #1565c0;
         }
         .home-link {
             position: absolute;
@@ -169,16 +172,15 @@
     </div>
     <header>
         <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="about.html" class="nav-link">About Me</a></li>
-                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
     </header>
+
+    <!-- Side Tab for Navigation -->
+    <div class="side-tab">
+        <a href="about.html" class="nav-link">About Me</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </div>
 
     <section class="hero-section">
         <div class="hero-content">
