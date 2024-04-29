@@ -33,6 +33,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
+    } else {
+        echo "Connected successfully"; // Debug message
     }
 
     // Prepare and execute SQL statement to insert user into the database
