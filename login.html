@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logout</title>
+    <title>Login</title>
     <style>
         /* Global Styles */
         body {
@@ -59,6 +59,18 @@
             margin-bottom: 20px;
             text-align: center;
         }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #007bff; /* Blue */
+            font-size: 24px;
+            margin-right: 10px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #ffd54f; /* Yellow on hover */
+        }
         footer {
             background-color: #007bff; /* Blue */
             color: #fff;
@@ -90,13 +102,23 @@
     </header>
 
     <div class="main-content">
-        <h2>Logout</h2>
-        <p>You have been logged out.</p>
-        <p><a href="login.html">Login again</a></p>
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Login">
+        </form>
     </div>
 
     <footer>
         <p>&copy; 2024 Daniel Gaudreault. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
     </footer>
 </body>
 </html>
