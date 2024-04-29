@@ -26,7 +26,7 @@
     <div class="main-content">
         <section>
             <h2>Register</h2>
-            <form action="register.php" method="post" onsubmit="return validateForm()">
+            <form action="register.php" method="post">
                 <label for="username">Username:</label><br>
                 <input type="text" id="username" name="username" required><br>
                 <label for="password">Password:</label><br>
@@ -46,18 +46,5 @@
             <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
-
-    <script>
-        function validateForm() {
-            var password = document.getElementById("password").value;
-            var confirm_password = document.getElementById("confirm_password").value;
-
-            if (password != confirm_password) {
-                alert("Passwords do not match");
-                return false;
-            }
-            return true;
-        }
-    </script>
 </body>
 </html>
