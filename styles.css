@@ -1,38 +1,90 @@
-/* Portfolio Page Styles */
-
-.portfolio {
-    text-align: center;
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-.portfolio h2 {
-    font-size: 32px;
-    font-weight: 700;
-    color: #007bff; /* Blue */
-    margin-bottom: 20px;
-}
-
-.portfolio .project {
-    margin-bottom: 40px;
+header {
+    background-color: #007bff; /* Blue */
+    color: #fff;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
+    text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.portfolio .project img {
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd54f; /* Yellow on hover */
+}
+
+.main-content {
+    margin: 20px auto;
+    width: 80%;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #007bff; /* Blue */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project {
+    background-color: #fff; /* White background for projects */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.project img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
-.portfolio .project h3 {
+.project h3 {
     font-size: 24px;
+    font-weight: 600;
     color: #333;
     margin-bottom: 10px;
 }
 
-.portfolio .project p {
+.project p {
     font-size: 16px;
     color: #666;
     margin-bottom: 20px;
@@ -50,4 +102,17 @@
 
 .btn:hover {
     background-color: #0056b3; /* Darker blue on hover */
+}
+
+footer {
+    background-color: #007bff; /* Blue */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
 }
