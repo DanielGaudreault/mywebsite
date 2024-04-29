@@ -38,6 +38,10 @@
             background-color: #1976d2;
             padding: 20px;
             z-index: 999;
+            display: none; /* Initially hidden */
+        }
+        .side-tab.active {
+            display: block; /* Show when active */
         }
         .side-tab a {
             display: block;
@@ -174,6 +178,9 @@
         <h1>Welcome to My Portfolio</h1>
     </header>
 
+    <!-- Button to toggle side tab -->
+    <button class="btn side-tab-toggle" onclick="toggleSideTab()">Show Navigation</button>
+
     <!-- Side Tab for Navigation -->
     <div class="side-tab">
         <a href="about.html" class="nav-link">About Me</a>
@@ -240,6 +247,12 @@
         // Function to navigate to home page
         function goToHomePage() {
             window.location.href = 'index.html';
+        }
+
+        // Function to toggle side tab visibility
+        function toggleSideTab() {
+            var sideTab = document.querySelector('.side-tab');
+            sideTab.classList.toggle('active');
         }
     </script>
 </body>
