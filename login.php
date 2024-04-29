@@ -12,6 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows == 1) {
         $_SESSION['username'] = $username;
         header("location: dashboard.php");
+        exit(); // Ensure that no further code is executed after redirection
     } else {
         $error = "Invalid username or password";
     }
