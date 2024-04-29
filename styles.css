@@ -3,101 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Styles</title>
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
     <style>
-        /* Reset CSS */
-        html, body, header, nav, ul, li, a, section, footer {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Global Styles */
+        /* Additional CSS styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
+            background-color: #f5f5f5; /* Light gray */
             color: #333;
-            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
-
         header {
-            background-color: #333;
+            background-color: #4caf50; /* Green */
             color: #fff;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-
         header h1 {
             margin: 0;
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
-
         nav ul {
             list-style-type: none;
             padding: 0;
+            margin: 20px 0;
         }
-
         nav ul li {
             display: inline;
             margin-right: 20px;
         }
-
         nav ul li a {
             color: #fff;
             text-decoration: none;
             font-size: 18px;
+            transition: color 0.3s ease;
         }
-
         nav ul li a:hover {
-            color: #ffc107;
+            color: #ffd54f; /* Yellow */
         }
-
         .main-content {
             margin: 20px auto;
             width: 80%;
         }
-
         section {
             margin-bottom: 40px;
         }
-
         section h2 {
+            font-size: 32px; /* Increased font size */
+            font-weight: 700;
+            color: #4caf50; /* Green */
             margin-bottom: 20px;
         }
-
         section p {
+            font-size: 18px; /* Increased font size */
+            line-height: 1.6;
+            color: #666;
             margin-bottom: 20px;
         }
-
+        .about-me img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 5px solid #4caf50; /* Green border */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #4caf50; /* Green */
+            font-size: 24px;
+            margin-right: 10px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #ffd54f; /* Yellow */
+        }
         footer {
-            background-color: #333;
+            background-color: #4caf50; /* Green */
             color: #fff;
             padding: 20px;
             text-align: center;
+            margin-top: 40px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         }
-
         footer p {
             margin: 0;
-        }
-
-        .social-icon {
-            color: #fff;
-            font-size: 24px;
-            margin-right: 10px;
-        }
-
-        .social-icon:hover {
-            color: #ffc107;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>About Me</h1>
         <!-- Navigation Menu -->
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -106,27 +115,20 @@
     <div class="main-content">
         <section class="about-me">
             <h2>About Me</h2>
-            <img src="profile.jpg" alt="Profile Picture" width="150">
-            <p>I'm a passionate web developer with a love for creating beautiful and functional websites.</p>
-        </section>
-
-        <section class="latest-posts">
-            <h2>Latest Blog Posts</h2>
-            <ul>
-                <li><a href="blog-post-1.html">Blog Post 1 <i class="fas fa-chevron-right"></i></a></li>
-                <li><a href="blog-post-2.html">Blog Post 2 <i class="fas fa-chevron-right"></i></a></li>
-                <!-- Add more blog posts as needed -->
-            </ul>
+            <img src="profile.jpg" alt="Profile Picture" width="200">
+            <p>Hello! I'm Daniel Gaudreault, a passionate web developer with a love for creating beautiful and functional websites. I have experience in HTML, CSS, JavaScript, and various web development frameworks. When I'm not coding, you can find me exploring new technologies, reading, or enjoying the great outdoors.</p>
+            <p>I'm driven by curiosity and a desire to continuously learn and improve. Whether it's tackling a challenging coding problem or discovering a new hiking trail, I approach each experience with enthusiasm and dedication.</p>
+            <p>Feel free to connect with me on social media!</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
-        <div>
-            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-        </div>
+        <p>&copy; 2024 Daniel Gaudreault. All rights reserved.</p>
     </footer>
 </body>
 </html>
