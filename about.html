@@ -17,10 +17,18 @@
         h2 {
             color: #512da8;
             text-align: center;
+            margin-bottom: 20px;
         }
-        p {
+        .about-content {
             line-height: 1.6;
             color: #666;
+        }
+        .about-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -30,7 +38,7 @@
         <nav>
             <ul>
                 <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About Me</a></li>
+                <li><a href="about.html" class="nav-link active">About Me</a></li>
                 <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
                 <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
@@ -40,9 +48,13 @@
 
     <div class="about-container">
         <h2>About Me</h2>
-        <p>Welcome to my about page! My name is [Your Name] and I'm a [Your Profession]. I have a passion for [Your Passion] and I love to [Your Hobby or Interest].</p>
-        <p>I have [Number of Years] years of experience in [Your Field] and have worked on various projects including [Project Examples].</p>
-        <p>Outside of work, I enjoy [Your Interests] and spending time with [Your Family/Pets/Friends]. Feel free to explore my portfolio to see some of my work!</p>
+        <img src="profile-picture.jpg" alt="Profile Picture" class="about-image">
+        <div class="about-content">
+            <p>Welcome to my about page! I'm [Your Name], a passionate [Your Profession] based in [Your Location].</p>
+            <p>I have [Number of Years] years of experience in [Your Field], specializing in [Your Expertise]. Throughout my career, I've worked on various projects, ranging from [Project Examples] to [Other Project Examples].</p>
+            <p>My goal is to [Your Goal or Mission]. I believe in [Your Beliefs or Values] and strive to [Your Aspirations].</p>
+            <p>When I'm not working, I enjoy [Your Interests]. I'm also a [Your Additional Roles or Titles], [Your Hobbies], and [Your Fun Facts or Quirks].</p>
+        </div>
     </div>
 
     <footer>
