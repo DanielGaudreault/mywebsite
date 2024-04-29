@@ -32,7 +32,7 @@
         }
         .side-tab {
             position: fixed;
-            top: 20px;
+            top: -100%; /* Start above the viewport */
             right: 20px;
             background-color: #1976d2;
             padding: 20px;
@@ -40,8 +40,10 @@
             display: none; /* Initially hidden */
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: top 0.5s ease; /* Transition for top property */
         }
         .side-tab.active {
+            top: 20px; /* Move into view */
             display: block; /* Show when active */
         }
         .side-tab a {
@@ -204,8 +206,8 @@
         <a href="contact.html" class="nav-link">Contact</a>
     </div>
 
-    <!-- Button to toggle side tab -->
-    <button class="btn side-tab-toggle" onclick="toggleSideTab()">Show Navigation</button>
+    <!-- Button to Toggle Side Tab -->
+    <button class="side-tab-toggle" onclick="toggleSideTab()">Show Navigation</button>
 
     <section class="hero-section">
         <div class="hero-content">
