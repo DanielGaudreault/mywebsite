@@ -46,4 +46,4 @@ Contributions are always welcome! If you have ideas for improvements, new featur
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code for your own projects.
+This project is licensed under the [DG License](LICENSE). Feel free to use, modify, and distribute the code for your own projects.
