@@ -23,9 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Database credentials
     $servername = "localhost";
-    $db_username = "your_username"; // Replace 'your_username' with your actual MySQL username
-    $db_password = "your_password"; // Replace 'your_password' with your actual MySQL password
-    $dbname = "your_database_name"; // Replace 'your_database_name' with your actual database name
+    $db_username = "dan"; // Replace 'your_username' with your actual MySQL username
+    $db_password = "123"; // Replace 'your_password' with your actual MySQL password
+    $dbname = "users.db"; // Replace 'your_database_name' with your actual database name
 
     // Create connection
     $conn = new mysqli($servername, $db_username, $db_password, $dbname);
