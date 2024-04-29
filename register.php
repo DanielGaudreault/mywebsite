@@ -21,11 +21,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Hash the password for security
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-    // Connect to your database (replace these credentials with yours)
-    $servername = "mywebsite";
-    $db_username = "your_username"; // Your MySQL username
-    $db_password = "your_password"; // Your MySQL password
-    $dbname = "your_database_name"; // Your MySQL database name
+    // Database credentials
+    $servername = "localhost";
+    $db_username = "your_username"; // Replace 'your_username' with your actual MySQL username
+    $db_password = "your_password"; // Replace 'your_password' with your actual MySQL password
+    $dbname = "your_database_name"; // Replace 'your_database_name' with your actual database name
 
     // Create connection
     $conn = new mysqli($servername, $db_username, $db_password, $dbname);
