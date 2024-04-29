@@ -23,9 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Connect to your database (replace these credentials with yours)
     $servername = "localhost";
-    $db_username = "your_username";
-    $db_password = "your_password";
-    $dbname = "your_database_name";
+    $db_username = "your_username"; // Your MySQL username
+    $db_password = "your_password"; // Your MySQL password
+    $dbname = "your_database_name"; // Your MySQL database name
 
     // Create connection
     $conn = new mysqli($servername, $db_username, $db_password, $dbname);
@@ -33,8 +33,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
-    } else {
-        echo "Connected successfully"; // Debug message
     }
 
     // Prepare and execute SQL statement to insert user into the database
