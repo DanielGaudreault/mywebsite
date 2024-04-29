@@ -3,42 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS styles specific to about.html */
+        .about-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #512da8;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>My Blog</h1>
-        <!-- Navigation Menu -->
+        <h1>Welcome to My Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Me</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="main-content">
-        <section class="blog-posts">
-            <h2>Blog</h2>
-            <div class="blog-post">
-                <h3>Blog Post 1</h3>
-                <p>This is the content of Blog Post 1.</p>
-            </div>
-            <div class="blog-post">
-                <h3>Blog Post 2</h3>
-                <p>This is the content of Blog Post 2.</p>
-            </div>
-            <!-- Add more blog posts as needed -->
-        </section>
+    <div class="about-container">
+        <h2>About Me</h2>
+        <p>Welcome to my about page! My name is [Your Name] and I'm a [Your Profession]. I have a passion for [Your Passion] and I love to [Your Hobby or Interest].</p>
+        <p>I have [Number of Years] years of experience in [Your Field] and have worked on various projects including [Project Examples].</p>
+        <p>Outside of work, I enjoy [Your Interests] and spending time with [Your Family/Pets/Friends]. Feel free to explore my portfolio to see some of my work!</p>
     </div>
 
     <footer>
         <p>&copy; 2024 Daniel Gaudreault. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <!-- Add more social icons as needed -->
+        </div>
     </footer>
 </body>
 </html>
