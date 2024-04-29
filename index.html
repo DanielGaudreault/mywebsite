@@ -32,9 +32,8 @@
         }
         .side-tab {
             position: fixed;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
+            top: 20px;
+            right: 20px;
             background-color: #1976d2;
             padding: 20px;
             z-index: 999;
@@ -178,9 +177,6 @@
         <h1>Welcome to My Portfolio</h1>
     </header>
 
-    <!-- Button to toggle side tab -->
-    <button class="btn side-tab-toggle" onclick="toggleSideTab()">Show Navigation</button>
-
     <!-- Side Tab for Navigation -->
     <div class="side-tab">
         <a href="about.html" class="nav-link">About Me</a>
@@ -188,6 +184,9 @@
         <a href="blog.html" class="nav-link">Blog</a>
         <a href="contact.html" class="nav-link">Contact</a>
     </div>
+
+    <!-- Button to toggle side tab -->
+    <button class="btn side-tab-toggle" onclick="toggleSideTab()">Show Navigation</button>
 
     <section class="hero-section">
         <div class="hero-content">
