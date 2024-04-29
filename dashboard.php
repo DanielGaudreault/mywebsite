@@ -2,6 +2,7 @@
 session_start();
 if (!isset($_SESSION['username'])) {
     header("location: login.php");
+    exit(); // Add exit to prevent further execution
 }
 ?>
 
@@ -13,7 +14,7 @@ if (!isset($_SESSION['username'])) {
     <title>Dashboard</title>
 </head>
 <body>
-    <h2>Welcome, <?php echo $_SESSION['username']; ?></h2>
+    <h2>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?></h2>
     <a href="logout.php">Logout</a>
 </body>
 </html>
