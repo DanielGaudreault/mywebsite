@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
     // Connect to your database (replace these credentials with yours)
-    $servername = "localhost";
+    $servername = "mywebsite";
     $db_username = "your_username"; // Your MySQL username
     $db_password = "your_password"; // Your MySQL password
     $dbname = "your_database_name"; // Your MySQL database name
