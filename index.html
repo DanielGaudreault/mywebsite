@@ -3,18 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Welcome to My Portfolio</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        /* Additional CSS styles */
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffc107;
+        }
+        .main-content {
+            margin: 20px auto;
+            width: 80%;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .about-me img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .latest-posts ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .latest-posts ul li {
+            margin-bottom: 10px;
+        }
+        .latest-posts ul li a {
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .latest-posts ul li a:hover {
+            color: #ffc107;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+        }
+        .social-icon {
+            color: #fff;
+            font-size: 24px;
+            margin-right: 10px;
+            transition: color 0.3s ease;
+        }
+        .social-icon:hover {
+            color: #ffc107;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Welcome to My Portfolio</h1>
         <!-- Navigation Menu -->
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">About Me</a></li> <!-- Changed from "About" to "About Me" for personal touch -->
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -24,21 +125,21 @@
         <section class="about-me">
             <h2>About Me</h2>
             <img src="profile.jpg" alt="Profile Picture" width="150">
-            <p>I'm a passionate web developer with a love for creating beautiful and functional websites.</p>
+            <p>Hello! I'm John Doe, a passionate web developer with a love for creating beautiful and functional websites. I believe in the power of technology to bring positive change to the world, and I'm dedicated to leveraging my skills to make a difference.</p>
         </section>
 
         <section class="latest-posts">
             <h2>Latest Blog Posts</h2>
             <ul>
-                <li><a href="blog-post-1.html">Blog Post 1 <i class="fas fa-chevron-right"></i></a></li>
-                <li><a href="blog-post-2.html">Blog Post 2 <i class="fas fa-chevron-right"></i></a></li>
+                <li><a href="blog-post-1.html">5 Essential Web Development Tools <i class="fas fa-chevron-right"></i></a></li>
+                <li><a href="blog-post-2.html">The Future of Web Design: Trends to Watch <i class="fas fa-chevron-right"></i></a></li>
                 <!-- Add more blog posts as needed -->
             </ul>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
         <div>
             <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
             <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
