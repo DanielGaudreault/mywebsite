@@ -34,6 +34,14 @@
                 <input type="password" id="password" name="password" required><br><br>
                 <input type="submit" value="Login">
             </form>
+            <?php
+            // Check if there's an error message from login.php
+            if(isset($_SESSION['error_message'])) {
+                echo '<p class="error">' . $_SESSION['error_message'] . '</p>';
+                // Clear the error message from session
+                unset($_SESSION['error_message']);
+            }
+            ?>
         </section>
     </div>
 
