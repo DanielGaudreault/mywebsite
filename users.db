@@ -1,8 +1,8 @@
--- SQL commands to create the users table
+-- SQL command to create the users table
 CREATE TABLE users (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    username TEXT NOT NULL,
-    password TEXT NOT NULL
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
 );
 
 -- SQL command to insert a sample user
