@@ -1,0 +1,9 @@
+-- SQL commands to create the users table
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT NOT NULL,
+    password TEXT NOT NULL
+);
+
+-- SQL command to insert a sample user
+INSERT INTO users (username, password) VALUES ('sample_user', 'sample_password');
