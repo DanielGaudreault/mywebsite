@@ -5,8 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
     <style>
         /* Additional CSS styles specific to the home page */
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1976d2; /* Blue */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffd54f; /* Yellow */
+        }
         .hero-section {
             background-image: url('hero-background.jpg');
             background-size: cover;
@@ -23,20 +60,22 @@
             padding: 20px;
         }
         .hero-content h1 {
-            font-size: 36px;
+            font-size: 48px;
             margin-bottom: 20px;
         }
         .hero-content p {
-            font-size: 18px;
+            font-size: 20px;
             margin-bottom: 30px;
+            color: #f0f0f0;
         }
         .btn {
             display: inline-block;
             background-color: #512da8;
             color: #fff;
-            padding: 10px 20px;
+            padding: 12px 24px;
             border-radius: 5px;
             text-decoration: none;
+            font-size: 18px;
             transition: background-color 0.3s ease;
         }
         .btn:hover {
@@ -45,18 +84,20 @@
         footer {
             background-color: #1976d2; /* Blue */
             color: #fff;
-            padding: 20px;
+            padding: 40px 0;
             text-align: center;
-            margin-top: 40px;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         }
         footer p {
             margin: 0;
+            font-size: 16px;
+        }
+        .social-icons {
+            margin-top: 20px;
         }
         .social-icon {
             color: #fff;
             font-size: 24px;
-            margin-right: 10px;
+            margin-right: 15px;
             transition: color 0.3s ease;
         }
         .social-icon:hover {
@@ -80,18 +121,19 @@
 
     <section class="hero-section">
         <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Discover my work and explore my journey in the world of [Your Profession].</p>
+            <h1>Welcome to My Professional Portfolio</h1>
+            <p>Explore my work and journey in the world of [Your Profession].</p>
             <a href="portfolio.html" class="btn">View Portfolio</a>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Daniel Gaudreault. All rights reserved.</p>
-        <div>
+        <div class="social-icons">
             <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
             <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
             <!-- Add more social icons as needed -->
         </div>
     </footer>
