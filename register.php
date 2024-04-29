@@ -22,10 +22,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
     // Database credentials
-    $servername = "localhost";
-    $db_username = "your_username"; // Replace 'your_username' with your actual MySQL username
-    $db_password = "your_password"; // Replace 'your_password' with your actual MySQL password
-    $dbname = "your_database_name"; // Replace 'your_database_name' with your actual database name
+    $servername = "https://danielgaudreault.github.io/mywebsite/register.html";
+    $db_username = "myuser"; // Replace 'your_username' with your actual MySQL username
+    $db_password = "mysecretpassword"; // Replace 'your_password' with your actual MySQL password
+    $dbname = "users_db"; // Replace 'your_database_name' with your actual database name
 
     // Create connection
     $conn = new mysqli($servername, $db_username, $db_password, $dbname);
