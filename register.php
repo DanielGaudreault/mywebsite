@@ -1,32 +1,40 @@
 <?php
-// Include the database configuration file
 require_once('config.php');
 
-// Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve form data
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Hash the password for security
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
-    // Prepare and execute the SQL statement to insert the new user
-    $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ss", $username, $hashed_password);
-
-    if ($stmt->execute()) {
-        // Registration successful, redirect to login page
+    // Insert user into the database
+    $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
+    if ($conn->query($sql) === TRUE) {
+        // Redirect to login page after successful registration
         header("location: login.php");
-        exit();
+        exit(); // Ensure no further code is executed after the redirect
     } else {
-        // Error occurred during registration
-        echo "Error: " . $stmt->error;
+        // Handle error
+        $error = "Error: " . $sql . "<br>" . $conn->error;
     }
-
-    // Close the database connection and statement
-    $stmt->close();
-    $conn->close();
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h2>Register</h2>
+    <form action="register.php" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Register">
+    </form>
+    <?php if(isset($error)) { echo $error; } ?>
+</body>
+</html>
