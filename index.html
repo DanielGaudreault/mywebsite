@@ -5,6 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        /* Additional CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            color: #ffc107;
+        }
+        .main-content {
+            margin: 20px auto;
+            width: 80%;
+            text-align: center;
+        }
+        .about-me, .latest-posts {
+            margin-bottom: 40px;
+        }
+        .about-me img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .latest-posts ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .latest-posts ul li {
+            margin-bottom: 10px;
+        }
+        .latest-posts ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+        .latest-posts ul li a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,31 +80,37 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li> <!-- Link to your About page -->
-                <li><a href="contact.html">Contact</a></li> <!-- Link to your Contact page -->
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section>
+    <div class="main-content">
+        <section class="about-me">
             <h2>About Me</h2>
-            <p>This is where you can write a brief introduction about yourself or your website.</p>
+            <img src="profile.jpg" alt="Profile Picture" width="150">
+            <p>I'm a passionate web developer with a love for creating beautiful and functional websites.</p>
         </section>
 
-        <section>
+        <section class="latest-posts">
             <h2>Latest Blog Posts</h2>
-            <!-- This could be a list of your latest blog posts -->
             <ul>
-                <li><a href="blog-post-1.html">Blog Post 1</a></li> <!-- Link to your blog post -->
-                <li><a href="blog-post-2.html">Blog Post 2</a></li>
+                <li><a href="blog-post-1.html">Blog Post 1 <i class="fas fa-chevron-right"></i></a></li>
+                <li><a href="blog-post-2.html">Blog Post 2 <i class="fas fa-chevron-right"></i></a></li>
                 <!-- Add more blog posts as needed -->
             </ul>
         </section>
-    </main>
+    </div>
 
     <footer>
         <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+        <div>
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
     </footer>
 </body>
 </html>
+
