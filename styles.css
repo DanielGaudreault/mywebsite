@@ -1,86 +1,132 @@
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9; /* Light gray background */
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Styles</title>
+    <style>
+        /* Reset CSS */
+        html, body, header, nav, ul, li, a, section, footer {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-header {
-    background-color: #007bff; /* Blue */
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
-}
+        header h1 {
+            margin: 0;
+        }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
 
-nav ul li a:hover {
-    color: #ffd54f; /* Yellow on hover */
-}
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
 
-.main-content {
-    margin: 20px auto;
-    width: 80%;
-}
+        nav ul li a:hover {
+            color: #ffc107;
+        }
 
-section {
-    margin-bottom: 40px;
-}
+        .main-content {
+            margin: 20px auto;
+            width: 80%;
+        }
 
-section h2 {
-    font-size: 28px;
-    font-weight: 600;
-    color: #007bff; /* Blue */
-    margin-bottom: 20px;
-    text-align: center;
-}
+        section {
+            margin-bottom: 40px;
+        }
 
-.about-me img {
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
+        section h2 {
+            margin-bottom: 20px;
+        }
 
-.social-icons {
-    margin-top: 20px;
-}
+        section p {
+            margin-bottom: 20px;
+        }
 
-.social-icons a {
-    color: #007bff; /* Blue */
-    font-size: 24px;
-    margin-right: 10px;
-    transition: color 0.3s ease;
-}
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
 
-.social-icons a:hover {
-    color: #ffd54f; /* Yellow on hover */
-}
+        footer p {
+            margin: 0;
+        }
 
-footer {
-    
+        .social-icon {
+            color: #fff;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .social-icon:hover {
+            color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <section class="about-me">
+            <h2>About Me</h2>
+            <img src="profile.jpg" alt="Profile Picture" width="150">
+            <p>I'm a passionate web developer with a love for creating beautiful and functional websites.</p>
+        </section>
+
+        <section class="latest-posts">
+            <h2>Latest Blog Posts</h2>
+            <ul>
+                <li><a href="blog-post-1.html">Blog Post 1 <i class="fas fa-chevron-right"></i></a></li>
+                <li><a href="blog-post-2.html">Blog Post 2 <i class="fas fa-chevron-right"></i></a></li>
+                <!-- Add more blog posts as needed -->
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+        <div>
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
