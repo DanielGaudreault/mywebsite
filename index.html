@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Portfolio</title>
+    <title>Welcome to My Portfolio | Daniel Gaudreault</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert library -->
@@ -17,18 +17,8 @@
             background-size: cover;
             background-position: center;
         }
-        header {
-            background-color: #1976d2; /* Blue */
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+        h1 {
+            font-size: 64px; /* Increase font size for the title */
         }
         .side-tab {
             position: fixed;
@@ -196,9 +186,6 @@
     <div class="home-link" onclick="goToHomePage()">
         <img src="images/main logo 2.png" alt="Home">
     </div>
-    <header>
-        <!-- Header without text -->
-    </header>
 
     <!-- Side Tab for Navigation -->
     <div class="side-tab">
@@ -213,13 +200,47 @@
 
     <section class="hero-section">
         <div class="hero-content">
-            <!-- Hero content remains unchanged -->
+            <h1>Welcome to My Portfolio</h1>
             <p>I'm Daniel, a passionate web developer based in Montreal. Let's build something amazing together!</p>
             <a href="contact.html" class="btn">Make an Appointment</a>
         </div>
     </section>
 
-    <!-- Remaining sections unchanged -->
+    <section class="intro-section">
+        <div class="intro-content">
+            <h2>Hi, I'm Daniel</h2>
+            <p>Welcome to my portfolio website! I'm a passionate web developer based in Montreal. With four years of experience, I specialize in front-end development, UI/UX design, and responsive web design. My goal is to create meaningful and user-friendly web experiences that make a difference.</p>
+            <p>When I'm not coding, I enjoy exploring new technologies, hiking in nature, and experimenting with cooking recipes.</p>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <div class="skills-content">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>SQL</li>
+                <li>Git</li>
+                <li>Responsive Web Design</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Daniel Gaudreault. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/dan.gaudreault/" class="social-icon" onclick="showMessage('Facebook')"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-icon" onclick="showMessage('Twitter')"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon" onclick="showMessage('LinkedIn')"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon" onclick="showMessage('GitHub')"><i class="fab fa-github"></i></a>
+            <!-- Add more social icons as needed -->
+        </div>
+    </footer>
 
     <script>
         // Function to display popup message
