@@ -48,6 +48,17 @@
         nav ul li a:hover {
             color: #ffd54f; /* Yellow */
         }
+        .home-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 999;
+            cursor: pointer;
+        }
+        .home-link img {
+            width: 40px;
+            height: auto;
+        }
         .hero-section {
             height: 100vh;
             display: flex;
@@ -153,6 +164,9 @@
     </style>
 </head>
 <body>
+    <div class="home-link" onclick="goToHomePage()">
+        <img src="images/blacknew 2.png" alt="Home">
+    </div>
     <header>
         <h1>Welcome to My Portfolio</h1>
         <nav>
@@ -219,6 +233,11 @@
                 icon: 'info',
                 confirmButtonText: 'Close'
             });
+        }
+
+        // Function to navigate to home page
+        function goToHomePage() {
+            window.location.href = 'index.html';
         }
     </script>
 </body>
