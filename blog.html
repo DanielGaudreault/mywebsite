@@ -89,12 +89,15 @@
             width: 80px; /* Increased size */
             height: auto;
         }
-        }
         header {
             background-color: #1976d2; /* Blue header background */
             color: #fff; /* White text color */
-            padding: 30px;
+            padding: 10px 20px; /* Adjusted padding */
             text-align: center;
+            position: fixed; /* Fixed position */
+            width: 100%; /* Full width */
+            top: 0; /* At the top */
+            z-index: 999; /* Higher z-index to appear above other content */
         }
         header h1 {
             margin: 0;
@@ -103,7 +106,7 @@
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>Blog</h1>
         <!-- Navigation Menu -->
         <nav>
             <ul>
