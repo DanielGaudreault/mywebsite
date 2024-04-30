@@ -6,6 +6,7 @@
     <title>Blog</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert library -->
     <style>
         /* Additional CSS styles specific to blog.html */
         .blog-posts {
@@ -30,6 +31,52 @@
             color: #666;
             line-height: 1.6;
         }
+        .side-tab {
+            position: fixed;
+            top: -100%; /* Start above the viewport */
+            right: 20px;
+            background-color: #512da8; /* Purple */
+            padding: 20px;
+            z-index: 999;
+            display: none; /* Initially hidden */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: top 0.5s ease; /* Transition for top property */
+            margin-top: 10px; /* Add margin */
+        }
+        .side-tab.active {
+            top: 60px; /* Move into view */
+            display: block; /* Show when active */
+        }
+        .side-tab a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .side-tab a:hover {
+            background-color: #673ab7; /* Darker purple on hover */
+        }
+        .side-tab-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #512da8; /* Purple */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+        .side-tab-toggle:hover {
+            background-color: #673ab7; /* Darker purple on hover */
+        }
     </style>
 </head>
 <body>
@@ -47,28 +94,40 @@
         </nav>
     </header>
 
+    <!-- Side Tab for Navigation -->
+    <div class="side-tab">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Me</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="#" class="nav-link active">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
+    <!-- Button to Toggle Side Tab -->
+    <button class="side-tab-toggle" onclick="toggleSideTab()">Show Navigation</button>
+
     <div class="main-content">
         <section class="blog-posts">
             <h2>Blog</h2>
             <div class="blog-post">
-    <h3>Introduction to Responsive Web Design</h3>
-    <p>Responsive web design (RWD) is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. This ensures that users have a great experience regardless of the device they are using.</p>
-    <p>RWD uses flexible layouts and grids, images, and CSS media queries to adapt the layout of a website to the viewing environment. With the increasing use of mobile devices to access the internet, responsive web design has become essential for modern websites.</p>
-    <p>In this blog post, we'll explore the principles of responsive web design, its benefits, and some best practices for implementing it in your projects. We'll also discuss some common challenges and how to overcome them.</p>
-</div>
+                <h3>Introduction to Responsive Web Design</h3>
+                <p>Responsive web design (RWD) is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. This ensures that users have a great experience regardless of the device they are using.</p>
+                <p>RWD uses flexible layouts and grids, images, and CSS media queries to adapt the layout of a website to the viewing environment. With the increasing use of mobile devices to access the internet, responsive web design has become essential for modern websites.</p>
+                <p>In this blog post, we'll explore the principles of responsive web design, its benefits, and some best practices for implementing it in your projects. We'll also discuss some common challenges and how to overcome them.</p>
+            </div>
 
             <div class="blog-post">
-    <h3>Introduction to JavaScript Frameworks: React, Vue, and Angular</h3>
-    <p>JavaScript frameworks are powerful tools for building modern web applications. They provide developers with a structured way to organize code, handle data, and create interactive user interfaces.</p>
-    <p>In this blog post, we'll take a closer look at three popular JavaScript frameworks: React, Vue, and Angular.</p>
-    <h4>React</h4>
-    <p>React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It allows developers to create reusable UI components and manage state efficiently using the virtual DOM.</p>
-    <h4>Vue</h4>
-    <p>Vue.js is a progressive JavaScript framework for building interactive web interfaces. It provides a simple and flexible API for building modern UIs and allows developers to incrementally adopt its features into existing projects.</p>
-    <h4>Angular</h4>
-    <p>Angular is a platform and framework for building single-page client applications using HTML and TypeScript. It provides a robust set of features for building complex applications, including dependency injection, routing, and state management.</p>
-    <p>In this post, we'll compare the features, pros, and cons of these frameworks to help you choose the right one for your next project.</p>
-</div>
+                <h3>Introduction to JavaScript Frameworks: React, Vue, and Angular</h3>
+                <p>JavaScript frameworks are powerful tools for building modern web applications. They provide developers with a structured way to organize code, handle data, and create interactive user interfaces.</p>
+                <p>In this blog post, we'll take a closer look at three popular JavaScript frameworks: React, Vue, and Angular.</p>
+                <h4>React</h4>
+                <p>React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It allows developers to create reusable UI components and manage state efficiently using the virtual DOM.</p>
+                <h4>Vue</h4>
+                <p>Vue.js is a progressive JavaScript framework for building interactive web interfaces. It provides a simple and flexible API for building modern UIs and allows developers to incrementally adopt its features into existing projects.</p>
+                <h4>Angular</h4>
+                <p>Angular is a platform and framework for building single-page client applications using HTML and TypeScript. It provides a robust set of features for building complex applications, including dependency injection, routing, and state management.</p>
+                <p>In this post, we'll compare the features, pros, and cons of these frameworks to help you choose the right one for your next project.</p>
+            </div>
 
             <!-- Add more blog posts as needed -->
         </section>
@@ -77,5 +136,13 @@
     <footer>
         <p>&copy; 2024 Daniel Gaudreault. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Function to toggle side tab visibility
+        function toggleSideTab() {
+            var sideTab = document.querySelector('.side-tab');
+            sideTab.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
