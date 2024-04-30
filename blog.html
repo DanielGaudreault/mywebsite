@@ -92,21 +92,15 @@
         header {
             background-color: #1976d2; /* Blue header background */
             color: #fff; /* White text color */
-            padding: 10px 20px; /* Adjusted padding */
+            padding: 30px;
             text-align: center;
-            position: fixed; /* Fixed position */
-            width: 100%; /* Full width */
-            top: 0; /* At the top */
-            z-index: 999; /* Higher z-index to appear above other content */
-        }
-        header h1 {
-            margin: 0;
+            margin-top: 80px; /* Move header down */
+            z-index: 999; /* Ensure it's above other content */
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Blog</h1>
         <!-- Navigation Menu -->
         <nav>
             <ul>
@@ -138,7 +132,6 @@
 
     <div class="main-content">
         <section class="blog-posts">
-            <h2>Blog</h2>
             <div class="blog-post">
                 <h3>Introduction to Responsive Web Design</h3>
                 <p>Responsive web design (RWD) is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. This ensures that users have a great experience regardless of the device they are using.</p>
