@@ -152,6 +152,21 @@
         .side-tab-toggle:hover {
             background-color: #388e3c; /* Darker green on hover */
         }
+        .home-link {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .home-link img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #fff;
+            padding: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
     </style>
 </head>
 <body>
@@ -181,11 +196,13 @@
     <!-- Button to Toggle Side Tab -->
     <button class="side-tab-toggle" onclick="toggleSideTab()">Show Navigation</button>
 
+    <!-- Home Link -->
+    <div class="home-link" onclick="goToHomePage()">
+        <img src="images/main logo 2.png" alt="Home">
+    </div>
+
     <div class="main-content">
         <section class="contact-info">
-            <div class="home-link" onclick="goToHomePage()">
-                <img src="images/main logo 2.png" alt="Home">
-            </div>
             <h2>Contact Information</h2>
             <p>Email: dan.gaudreault87@gmail.com</p>
             <p>Phone: +1 514-291-8701</p>
