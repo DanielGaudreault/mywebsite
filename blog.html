@@ -77,8 +77,20 @@
         .side-tab-toggle:hover {
             background-color: #673ab7; /* Darker purple on hover */
         }
+        .home-link {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .home-link img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
         header {
-            padding-top: 6px; /* Move header up by 9px */
+            padding-top: 6px; /* Move header up */
         }
     </style>
 </head>
@@ -108,6 +120,11 @@
 
     <!-- Button to Toggle Side Tab -->
     <button class="side-tab-toggle" onclick="toggleSideTab()">Show Navigation</button>
+
+    <!-- Home Link -->
+    <div class="home-link" onclick="goToHomePage()">
+        <img src="images/main logo 2.png" alt="Home">
+    </div>
 
     <div class="main-content">
         <section class="blog-posts">
@@ -145,6 +162,11 @@
         function toggleSideTab() {
             var sideTab = document.querySelector('.side-tab');
             sideTab.classList.toggle('active');
+        }
+
+        // Function to navigate to home page
+        function goToHomePage() {
+            window.location.href = 'index.html';
         }
     </script>
 </body>
