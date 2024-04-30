@@ -76,21 +76,18 @@
         }
         .side-tab-toggle:hover {
             background-color: #673ab7; /* Darker purple on hover */
-        }
+         }
         .home-link {
-            position: fixed;
-            top: 20px;
+            position: absolute;
+            top: 10px; /* Adjusted position */
             left: 20px;
+            z-index: 999;
             cursor: pointer;
-            z-index: 1000;
+            margin-top: -10px; /* Adjusted negative margin */
         }
         .home-link img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-        }
-        header {
-            padding-top: 6px; /* Move header up */
+            width: 80px; /* Increased size */
+            height: auto;
         }
     </style>
 </head>
