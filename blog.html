@@ -83,7 +83,6 @@
             left: 20px;
             z-index: 999;
             cursor: pointer;
-            margin-top: -10px; /* Adjusted negative margin */
         }
         .home-link img {
             width: 80px; /* Increased size */
@@ -119,6 +118,11 @@
         </nav>
     </header>
 
+    <!-- Home Link -->
+    <div class="home-link" onclick="goToHomePage()">
+        <img src="images/main logo 2.png" alt="Home">
+    </div>
+
     <!-- Side Tab for Navigation -->
     <div class="side-tab">
         <a href="index.html" class="nav-link">Home</a>
@@ -130,11 +134,6 @@
 
     <!-- Button to Toggle Side Tab -->
     <button class="side-tab-toggle" onclick="toggleSideTab()">Show Navigation</button>
-
-    <!-- Home Link -->
-    <div class="home-link" onclick="goToHomePage()">
-        <img src="images/main logo 2.png" alt="Home">
-    </div>
 
     <div class="main-content">
         <section class="blog-posts">
