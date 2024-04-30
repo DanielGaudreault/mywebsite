@@ -9,15 +9,20 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert library -->
     <style>
         /* Additional CSS styles specific to blog.html */
+        body {
+            background-color: #1976d2; /* Blue background color */
+            color: #fff; /* White text color */
+            padding-top: 80px; /* Adjusted padding for header */
+        }
         .blog-posts {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-        }
-        .blog-post {
-            background-color: #fff;
+            background-color: #fff; /* White background color */
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .blog-post {
             padding: 30px;
             margin-bottom: 20px;
         }
@@ -90,28 +95,11 @@
             height: auto;
         }
         header {
-            background-color: #1976d2; /* Blue header background */
-            color: #fff; /* White text color */
-            padding: 30px;
-            text-align: center;
-            margin-top: 80px; /* Move header down */
-            z-index: 999; /* Ensure it's above other content */
+            display: none; /* Hide the header */
         }
     </style>
 </head>
 <body>
-    <header>
-        <!-- Navigation Menu -->
-        <nav>
-            <ul>
-                <li><a href="index.html"></a></li>
-                <li><a href="about.html"></a></li>
-                <li><a href="portfolio.html"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="contact.html"></a></li>
-            </ul>
-        </nav>
-    </header>
 
     <!-- Side Tab for Navigation -->
     <div class="side-tab">
