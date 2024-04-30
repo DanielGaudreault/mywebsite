@@ -8,6 +8,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
     <style>
         /* Additional CSS styles specific to about.html */
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Light gray background */
+        }
+        header {
+            background-color: #1976d2; /* Blue header background */
+            color: #fff; /* White text color */
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+        .nav-link {
+            color: #fff; /* White link color */
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .nav-link.active {
+            font-weight: bold; /* Bold font for active link */
+        }
         .about-container {
             max-width: 800px;
             margin: 50px auto;
@@ -16,13 +52,9 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #512da8;
+            color: #512da8; /* Purple heading color */
             text-align: center;
             margin-bottom: 20px;
-        }
-        .about-content {
-            line-height: 1.6;
-            color: #666;
         }
         .about-image {
             display: block;
@@ -33,6 +65,21 @@
             object-fit: cover;
             object-position: top; /* Crop from the top */
             max-height: 300px; /* Set a max height to maintain aspect ratio */
+        }
+        .about-content {
+            line-height: 1.6;
+            color: #666; /* Dark gray text color */
+            text-align: justify;
+        }
+        footer {
+            background-color: #1976d2; /* Blue footer background */
+            color: #fff; /* White text color */
+            padding: 40px 0;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+            font-size: 16px;
         }
         .social-icons {
             text-align: center;
@@ -67,10 +114,10 @@
         <h2>About Me</h2>
         <img src="images/me.jpg" alt="Profile Picture" class="about-image">
         <div class="about-content">
-            <p>Welcome to my about page! I'm Daniel Gaudreault, a passionate websdesigner based in Montreal.</p>
-            <p>I have four years of experience in coding, specializing in webdesigning. Throughout my career, I've worked on various projects, ranging from python to java script.</p>
+            <p>Welcome to my about page! I'm Daniel Gaudreault, a passionate web designer based in Montreal.</p>
+            <p>I have four years of experience in coding, specializing in web designing. Throughout my career, I've worked on various projects, ranging from Python to JavaScript.</p>
             <p>My goal is to make you happy. I believe in Your Beliefs or Values and strive to Your Aspirations.</p>
-            <p>When I'm not working, I enjoy hanging out with friends. I'm also a leader, in my comunity, and my qorks are fun.</p>
+            <p>When I'm not working, I enjoy hanging out with friends. I'm also a leader in my community, and my works are fun.</p>
         </div>
     </div>
 
