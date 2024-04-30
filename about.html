@@ -6,6 +6,7 @@
     <title>About Me</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert library -->
     <style>
         /* Additional CSS styles specific to about.html */
         body {
@@ -94,6 +95,52 @@
         .social-icon:hover {
             color: #512da8; /* Hover color */
         }
+        .side-tab {
+            position: fixed;
+            top: -100%; /* Start above the viewport */
+            right: 20px;
+            background-color: #1976d2;
+            padding: 20px;
+            z-index: 999;
+            display: none; /* Initially hidden */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: top 0.5s ease; /* Transition for top property */
+            margin-top: 10px; /* Add margin */
+        }
+        .side-tab.active {
+            top: 60px; /* Move into view */
+            display: block; /* Show when active */
+        }
+        .side-tab a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .side-tab a:hover {
+            background-color: #1565c0;
+        }
+        .side-tab-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #1976d2;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+        .side-tab-toggle:hover {
+            background-color: #1565c0;
+        }
     </style>
 </head>
 <body>
@@ -109,6 +156,17 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Side Tab for Navigation -->
+    <div class="side-tab">
+        <a href="about.html" class="nav-link">About Me</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
+    <!-- Button to Toggle Side Tab -->
+    <button class="side-tab-toggle" onclick="toggleSideTab()">Show Navigation</button>
 
     <div class="about-container">
         <h2>About Me</h2>
@@ -130,5 +188,13 @@
             <!-- Add more social icons as needed -->
         </div>
     </footer>
+
+    <script>
+        // Function to toggle side tab visibility
+        function toggleSideTab() {
+            var sideTab = document.querySelector('.side-tab');
+            sideTab.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
