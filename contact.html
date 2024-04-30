@@ -183,6 +183,9 @@
 
     <div class="main-content">
         <section class="contact-info">
+            <div class="home-link" onclick="goToHomePage()">
+                <img src="images/main logo 2.png" alt="Home">
+            </div>
             <h2>Contact Information</h2>
             <p>Email: dan.gaudreault87@gmail.com</p>
             <p>Phone: +1 514-291-8701</p>
@@ -206,6 +209,11 @@
         function toggleSideTab() {
             const sideTab = document.querySelector('.side-tab');
             sideTab.classList.toggle('active');
+        }
+
+        // Function to navigate to home page
+        function goToHomePage() {
+            window.location.href = 'index.html';
         }
     </script>
 </body>
