@@ -144,6 +144,10 @@
     </style>
 </head>
 <body>
+    <div class="home-link" onclick="goToHomePage()">
+        <img src="images/main logo 2.png" alt="Home">
+    </div>
+
     <header>
         <nav>
             <ul>
@@ -194,6 +198,10 @@
         function toggleSideTab() {
             var sideTab = document.querySelector('.side-tab');
             sideTab.classList.toggle('active');
+        }
+        // Function to navigate to home page
+        function goToHomePage() {
+            window.location.href = 'index.html';
         }
     </script>
 </body>
