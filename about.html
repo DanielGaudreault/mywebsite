@@ -114,38 +114,6 @@
         .side-tab-toggle:hover {
             background-color: #1565c0;
         }
-        /* Styles for the show navigation button */
-        .show-navigation-button {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background-image: linear-gradient(135deg, #008aff, #86d472);
-            border-radius: 6px;
-            box-sizing: border-box;
-            color: #ffffff;
-            display: block;
-            height: 50px;
-            font-size: 1.4em;
-            font-weight: 600;
-            padding: 4px;
-            z-index: 2;
-            cursor: pointer;
-        }
-        .show-navigation-button:hover {
-            color: #fff;
-        }
-        .show-navigation-button .button-span {
-            align-items: center;
-            background: #0e0e10;
-            border-radius: 6px;
-            display: flex;
-            justify-content: center;
-            height: 100%;
-            transition: background 0.5s ease;
-        }
-        .show-navigation-button:hover .button-span {
-            background: transparent;
-        }
     </style>
 </head>
 <body>
@@ -176,11 +144,6 @@
 
     <!-- Button to Toggle Side Tab -->
     <button class="side-tab-toggle" onclick="toggleSideTab()">Show Navigation</button>
-
-    <!-- Show Navigation Button -->
-    <div class="show-navigation-button" onclick="toggleSideTab()">
-        <span class="button-span">Show Navigation</span>
-    </div>
 
     <div class="about-container">
         <h2>About Me</h2>
