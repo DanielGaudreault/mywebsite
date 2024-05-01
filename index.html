@@ -48,21 +48,37 @@
             background-color: #1565c0;
         }
         .side-tab-toggle {
-            position: fixed;
-            top: 20px;
+            background-image: linear-gradient(135deg, #008aff, #86d472);
+            border-radius: 6px;
+            box-sizing: border-box;
+            color: #ffffff;
+            display: block;
+            height: 50px;
+            font-size: 1.4em;
+            font-weight: 600;
+            padding: 4px;
+            position: relative;
             right: 20px;
-            background-color: #1976d2;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            z-index: 1000;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            transition: background-color 0.3s ease;
+            top: 20px;
+            text-decoration: none;
+            width: 7em;
+            z-index: 2;
         }
         .side-tab-toggle:hover {
-            background-color: #1565c0;
+            color: #fff;
+        }
+        .side-tab-toggle .side-tab-span {
+            align-items: center;
+            background: #0e0e10;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            transition: background 0.5s ease;
+            width: 100%;
+        }
+        .side-tab-toggle:hover .side-tab-span {
+            background: transparent;
         }
         .home-link {
             position: absolute;
@@ -178,39 +194,6 @@
         .social-icon:hover {
             color: #ffd54f; /* Yellow */
         }
-        .nav-button {
-            background-image: linear-gradient(135deg, #008aff, #86d472);
-            border-radius: 6px;
-            box-sizing: border-box;
-            color: #ffffff;
-            display: block;
-            height: 50px;
-            font-size: 1.4em;
-            font-weight: 600;
-            padding: 4px;
-            position: absolute;
-            right: 20px;
-            top: 20px;
-            text-decoration: none;
-            width: 7em;
-            z-index: 2;
-        }
-        .nav-button:hover {
-            color: #fff;
-        }
-        .nav-button .nav-button-span {
-            align-items: center;
-            background: #0e0e10;
-            border-radius: 6px;
-            display: flex;
-            justify-content: center;
-            height: 100%;
-            transition: background 0.5s ease;
-            width: 100%;
-        }
-        .nav-button:hover .nav-button-span {
-            background: transparent;
-        }
     </style>
 </head>
 <body>
@@ -227,7 +210,9 @@
     </div>
 
     <!-- Button to Toggle Side Tab -->
-    <button class="side-tab-toggle" onclick="toggleSideTab()">Show Navigation</button>
+    <button class="side-tab-toggle" onclick="toggleSideTab()">
+        <span class="side-tab-span">Show Navigation</span>
+    </button>
 
     <section class="hero-section">
         <div class="hero-content">
