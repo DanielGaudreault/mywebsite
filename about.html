@@ -17,8 +17,6 @@
             background-image: url('images/city 2.jpg');
             background-size: cover;
             background-position: center;
-            position: relative; /* Added position relative */
-            min-height: 100vh; /* Added minimum height to ensure footer stays at the bottom */
         }
         header {
             background-color: #1976d2; /* Blue header background */
@@ -62,13 +60,15 @@
             width: 80px; /* Increased size */
             height: auto;
         }
-        .about-container {
+                .about-container {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.8); /* Transparent black with 80% opacity */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+
         h2 {
             color: #512da8; /* Purple heading color */
             text-align: center;
@@ -89,28 +89,72 @@
             color: #666; /* Dark gray text color */
             text-align: justify;
         }
-        footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            background-color: #1976d2; /* Blue footer background */
-            color: #fff; /* White text color */
+
+        .side-tab {
+            position: fixed;
+            top: -100%; /* Start above the viewport */
+            right: 20px;
+            background-color: #1976d2;
             padding: 20px;
-            text-align: center;
+            z-index: 999;
+            display: none; /* Initially hidden */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: top 0.5s ease; /* Transition for top property */
+            margin-top: 10px; /* Add margin */
         }
-        .social-icons {
-            margin-top: 20px;
+        .side-tab.active {
+            top: 60px; /* Move into view */
+            display: block; /* Show when active */
         }
-        .social-icon {
+        .side-tab a {
+            display: block;
             color: #fff;
-            font-size: 24px;
-            margin-right: 10px;
-            transition: color 0.3s ease;
+            text-decoration: none;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
-        .social-icon:hover {
-            color: #ffd54f; /* Yellow */
+        .side-tab a:hover {
+            background-color: #1565c0;
         }
-        /* Rest of your CSS styles */
+        .side-tab-toggle {
+            background-image: linear-gradient(135deg, #008aff, #86d472);
+            border-radius: 6px;
+            box-sizing: border-box;
+            color: #ffffff;
+            display: block;
+            height: 50px;
+            font-size: 1.4em;
+            font-weight: 600;
+            padding: 4px;
+            position: fixed;
+            text-decoration: none;
+            width: 7em;
+            z-index: 2;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.5s ease;
+        }
+        .side-tab-toggle:hover {
+            color: #fff;
+        }
+        .side-tab-toggle .bn39span {
+            align-items: center;
+            background: #0e0e10;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            transition: background 0.5s ease;
+            width: 100%;
+        }
+        .side-tab-toggle:hover .bn39span {
+            background: transparent;
+        }
     </style>
 </head>
 <body>
@@ -164,8 +208,6 @@
             <!-- Add more social icons as needed -->
         </div>
     </footer>
-
-    <button class="side-tab-toggle" onclick="toggleSideTab()">Show Navigation</button>
 
     <script>
         // Function to toggle side tab visibility
