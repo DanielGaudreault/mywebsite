@@ -220,6 +220,16 @@
         function goToHomePage() {
             window.location.href = 'index.html';
         }
+        // Check if favicon exists
+        var faviconImg = new Image();
+        faviconImg.onload = function() {
+            console.log("Favicon loaded successfully.");
+        }
+        faviconImg.onerror = function() {
+            console.log("Favicon not found.");
+            // Handle the case where favicon is not found (e.g., display a default favicon)
+        }
+        faviconImg.src = 'images/favicon.png';
     </script>
 </body>
 </html>
