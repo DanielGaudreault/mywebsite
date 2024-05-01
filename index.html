@@ -178,7 +178,7 @@
         .social-icon:hover {
             color: #ffd54f; /* Yellow */
         }
-        .bn39 {
+        .nav-button {
             background-image: linear-gradient(135deg, #008aff, #86d472);
             border-radius: 6px;
             box-sizing: border-box;
@@ -188,15 +188,17 @@
             font-size: 1.4em;
             font-weight: 600;
             padding: 4px;
-            position: relative;
+            position: absolute;
+            right: 20px;
+            top: 20px;
             text-decoration: none;
             width: 7em;
             z-index: 2;
         }
-        .bn39:hover {
+        .nav-button:hover {
             color: #fff;
         }
-        .bn39 .bn39span {
+        .nav-button .nav-button-span {
             align-items: center;
             background: #0e0e10;
             border-radius: 6px;
@@ -206,7 +208,7 @@
             transition: background 0.5s ease;
             width: 100%;
         }
-        .bn39:hover .bn39span {
+        .nav-button:hover .nav-button-span {
             background: transparent;
         }
     </style>
@@ -231,7 +233,7 @@
         <div class="hero-content">
             <h1>Welcome to My Portfolio</h1>
             <p>I'm Daniel, a passionate web developer based in Montreal. Let's build something amazing together!</p>
-            <a href="contact.html" class="btn bn39"><span class="bn39span">Make an Appointment</span></a>
+            <a href="contact.html" class="btn">Make an Appointment</a>
         </div>
     </section>
 
