@@ -60,12 +60,34 @@
             width: 80px; /* Increased size */
             height: auto;
         }
-        .about-container {
+                .about-container {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.8); /* Transparent black with 80% opacity */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        h2 {
+            color: #512da8; /* Purple heading color */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .about-image {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            object-fit: cover;
+            object-position: top; /* Crop from the top */
+            max-height: 300px; /* Set a max height to maintain aspect ratio */
+        }
+        .about-content {
+            line-height: 1.6;
+            color: #666; /* Dark gray text color */
+            text-align: justify;
         }
 
         .side-tab {
