@@ -98,21 +98,40 @@
             background-color: #1565c0;
         }
         .side-tab-toggle {
+            background-image: linear-gradient(135deg, #008aff, #86d472);
+            border-radius: 6px;
+            box-sizing: border-box;
+            color: #ffffff;
+            display: block;
+            height: 50px;
+            font-size: 1.4em;
+            font-weight: 600;
+            padding: 4px;
             position: fixed;
+            text-decoration: none;
+            width: 7em;
+            z-index: 2;
             top: 20px;
             right: 20px;
-            background-color: #1976d2;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
             cursor: pointer;
-            z-index: 1000;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            transition: background-color 0.3s ease;
+            transition: background 0.5s ease;
         }
         .side-tab-toggle:hover {
-            background-color: #1565c0;
+            color: #fff;
+        }
+        .side-tab-toggle .bn39span {
+            align-items: center;
+            background: #0e0e10;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            transition: background 0.5s ease;
+            width: 100%;
+        }
+        .side-tab-toggle:hover .bn39span {
+            background: transparent;
         }
     </style>
 </head>
@@ -134,7 +153,9 @@
     </header>
 
     <!-- Button to Toggle Side Tab -->
-    <button class="side-tab-toggle" onclick="toggleSideTab()">Show Navigation</button>
+    <a href="#" class="side-tab-toggle" onclick="toggleSideTab()">
+        <span class="bn39span">Show Navigation</span>
+    </a>
 
     <!-- Side Tab for Navigation -->
     <div class="side-tab">
