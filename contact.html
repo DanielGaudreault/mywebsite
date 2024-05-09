@@ -18,6 +18,8 @@
             background-size: cover;
             background-position: center;
             color: #333;
+            min-height: 100vh; /* Ensure full height */
+            position: relative; /* Needed for footer positioning */
         }
         header {
             background-color: #1976d2; /* Blue */
@@ -107,6 +109,9 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+            position: absolute; /* Fixed position */
+            bottom: 0; /* Stick to the bottom */
+            width: 100%; /* Full width */
         }
         footer p {
             margin: 0;
