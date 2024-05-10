@@ -1,16 +1,21 @@
 {
-  "name": "Your Portfolio Name",
-  "short_name": "Portfolio",
-  "start_url": "/",
+  "name": "My Portfolio",
+  "short_name": "MDG",
+  "description": "Description of your web app",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#512da8",
+  "theme_color": "#1976d2",
   "icons": [
     {
-      "src": "images/main_logo_2.png",
-      "sizes": "48x48 72x72 96x96 144x144 192x192 256x256 384x384 512x512",
-      "type": "image/png",
-      "purpose": "any"
+      "src": "images/main logo 2.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/main logo 2.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }
