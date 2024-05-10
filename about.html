@@ -17,6 +17,27 @@
             background-size: cover;
             background-position: center;
         }
+        header {
+            background-color: #1976d2;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .home-link {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            z-index: 999;
+            cursor: pointer;
+            margin-top: -10px;
+        }
+        .home-link img {
+            width: 80px;
+            height: auto;
+        }
         .about-container {
             max-width: 800px;
             margin: 50px auto;
@@ -57,15 +78,7 @@
     </div>
 
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="nav-link"></a></li>
-                <li><a href="about.html" class="nav-link active"></a></li>
-                <li><a href="portfolio.html" class="nav-link"></a></li>
-                <li><a href="blog.html" class="nav-link"></a></li>
-                <li><a href="contact.html" class="nav-link"></a></li>
-            </ul>
-        </nav>
+        <h1>About Me</h1>
     </header>
 
     <!-- Button to Toggle Side Tab -->
@@ -73,7 +86,6 @@
     <!-- Side Tab for Navigation -->
 
     <div class="about-container">
-        <h2>About Me</h2>
         <img src="images/me.jpg" alt="Profile Picture" class="about-image">
         <div class="about-content">
             <p>Welcome to my about page! I'm Daniel Gaudreault, a passionate web designer based in Montreal.</p>
