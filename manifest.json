@@ -1,6 +1,6 @@
 {
   "name": "My Portfolio",
-  "short_name": "MDG",
+  "short_name": "LDG",
   "description": "Description of your web app",
   "start_url": "./index.html",
   "display": "standalone",
@@ -8,12 +8,12 @@
   "theme_color": "#1976d2",
   "icons": [
     {
-      "src": "images/main logo 2.png",
+      "src": "images/MyLogo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "images/main logo 2.png",
+      "src": "images/MyLogo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
