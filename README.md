@@ -14,7 +14,7 @@ Welcome to my portfolio! This is where I showcase my projects, share insights fr
 
 This portfolio serves as a digital footprint of my journey as a web developer and tech enthusiast. Here, you'll find a curated collection of my projects, blog posts, and a glimpse into who I am.
 
-You can visit my portfolio website [here](https://danielgaudreault.github.io/mywebsite/index.html).
+You can visit my portfolio website [here](https://danielgaudreault.github.io/MyWebsite/index.html).
 
 
 ## Features
